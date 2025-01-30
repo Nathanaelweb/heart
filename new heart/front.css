@@ -1,0 +1,62 @@
+body{
+    background-image: url(rose.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 1400px;
+    text-align: center;
+    margin: 1000px auto;
+    animation: move;
+}
+@keyframes move{
+    0%{
+      opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }    
+    100%{
+        opacity: 1;
+    }
+
+
+}
+
+
+h1{
+    color: rgb(255, 0, 43);
+    background-color: white;
+    border-radius: 10PX;
+    border: 10PX 10PX solid black;
+    font-size: 40PX;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 40px auto;
+    animation: move-up 5s forwards;
+}
+a{
+    color: rgb(255, 0, 119);
+    text-decoration: none;
+    list-style: none;
+    font-size: 200px;
+    text-align: center;
+}
+@keyframes move-up{
+    0%{
+        transform: translateY(100vh) rotate(0deg) scale(0.2);
+        opacity: 0;
+       
+        
+    }
+    90%{ opacity: 0.2; transform: translateY(0.2);
+        
+      
+    }
+    100%{
+        transform: translateY(0) rotate(360deg) scale(1);
+        opacity: 1;
+        
+}
+}
